@@ -1,0 +1,177 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+
+h1 {
+  display: flex;
+  color: rgb(133, 8, 250);
+  align-items: baseline;
+  font-size: 5vw;
+  justify-content: center;
+  margin: auto;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2vw;
+  margin: 0;
+  color: white;
+  background: linear-gradient(110deg, rgb(133, 8, 250) 40%,#4304fd,#2102fe,#0000ff);
+  box-shadow: 0 0 5px 0 rgb(15, 15, 15),
+  0 0 14px 5px #8d8dfc,
+  0 0 14px 7px #0000ff;
+}
+
+/* search bar and button */
+input {
+  display: flex;
+  border-radius: 5px;
+  width: 30vw;
+  margin: 15pt auto;
+  justify-content: center;
+  width: 80vw;
+  max-width: 400px;
+}
+
+#text-input {
+  padding: 8px;
+}
+
+button {
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  box-shadow: 2px 2px 0 0 rgb(253, 251, 251);
+}
+
+/* Displayed quotes */
+#quotes {
+  color: white;
+  letter-spacing: 2px;
+  max-width: fit-content;
+  min-width: fit-content;
+  line-height: 2.5;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12pt;
+}
+#note {
+  border: double #6cf710;
+  border-radius: 10px;
+  margin: 20pt auto;
+  padding: 10px;
+  width: fit-content;
+}
+
+.quote {
+font-style: italic;
+}
+
+.movie {
+font-weight: bolder;
+}
+
+/* GIPHY results */
+#search-results {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.wrapper {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.gif {
+  padding: 18pt 0;
+}
+
+/* credit footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 20rem;
+  color:rgb(156, 156, 156);
+}
+
+/* button hovers */
+.icon:hover {
+  font-size: 110%;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  box-shadow:
+  0 0 10px 5px #8d8dfc,
+  0 0 10px 5px #0000ff;
+}
+
+input:hover {
+  box-shadow: 0 0 5px 5px rgb(255, 254, 254);
+}
+
+button:hover {
+  cursor: pointer;
+  font-size: 99%;
+  color: white;
+  background-color: black;
+  box-shadow:
+  0 0 7px 3px #8d8dfc,
+  0 0 7px 3px #0000ff;
+}
+
+li:hover {
+  cursor: pointer;
+  font-size: 99%;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow:
+  0 0 7px 3px #8d8dfc,
+  0 0 7px 3px #0000ff;
+}
+
+nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 4%;
+  
+}
+
+li {
+  color: white;
+  font-size: 120%;
+  margin-left: 50px;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  #quotes {
+    flex-direction: column;
+    text-align: center;
+  }
+}
